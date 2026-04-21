@@ -1,4 +1,4 @@
-const vege = 'onion';
+const vege = 'tomato';
 vegetableColor(vege);
 
 function vegetableColor(vegetable){
