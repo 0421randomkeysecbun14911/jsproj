@@ -1,23 +1,16 @@
-const vege = 'tomato';
-vegetableColor(vege);
-
-function vegetableColor(vegetable){
-    // if(vegetable === 'tomato'){
-    //     console.log('tomato is red!');
-    // }else if(vegetable === 'punmpkin'){
-    //     console.log('tomato is red!');
-    // }
-    switch(vegetable){
-        case 'tomato':
-            console.log('tomato is red!');
-            break;
-        case 'pumpkin':
-            console.log('pumpkin is orange!');
-            break;
-        case 'onion':
-            console.log('onion is white!');
-            break;
-        default:
-            console.log('Not Found');
-    }
-}
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // デフォルトの送信を防ぐ
+    
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    
+    console.log('お名前:', name);
+    console.log('メールアドレス:', email);
+    console.log('メッセージ:', message);
+    
+    alert('お問い合わせを受け付けました。ありがとうございます！');
+    
+    // フォームをリセット
+    document.getElementById('contactForm').reset();
+});

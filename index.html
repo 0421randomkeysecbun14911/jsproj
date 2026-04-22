@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <script src="index.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testPage1</title>
+    <title>お問い合わせフォーム</title>
 </head>
 <body>
-    <a class="point" href = "" >リンク</a>
-    <h1>test</h1>
-    
+    <h1>お問い合わせフォーム</h1>
+    <form id="contactForm">
+        <label for="name">お名前:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">メールアドレス:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="message">メッセージ:</label>
+        <textarea id="message" name="message" required></textarea><br><br>
+        
+        <button type="submit">送信</button>
+    </form>
 </body>
 </html>
